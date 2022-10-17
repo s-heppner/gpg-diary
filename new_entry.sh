@@ -37,7 +37,7 @@ cat << EOF > $FILE
 EOF
 # Open the file in an editor (you can adapt this line to an editor of your choice)
 echo "Waiting for editor to close"
-/bin/vim $FILE
+vim $FILE
 
 # We're done
 echo "Done"

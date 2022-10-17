@@ -6,7 +6,7 @@ The diary is just a series of gpg encrypted files using the `gpgtar` command. Si
 
 ## Installation
 
-- Clone or fork this repository
+- Fork (and/or) clone this repository
 - Install the requirements:
 
 Ubuntu:
@@ -26,8 +26,8 @@ On first use (meaning if you don't have an encrypted folder yet), you don't need
 ## General Notes
 
 - Remember the password well. If you forget it, your data is gone.
-- Check the shell scripts. I commented them and they're pretty simple, so there is no excuse not to do your diligence 
-- When running this via ssh-connections, you may need the following in order to input passwords: `export GPG_TTY=$(tty)`
+- Check the shell scripts. I commented them and they're pretty simple, so there is no excuse not to do your diligence to secure your data
+- When running this via ssh connections, you may need the following in order to input passwords: `export GPG_TTY=$(tty)`
 - The `./data` folder is in the `.gitignore`, so that you don't accidentally push your unencrypted diary (which shouldn't happen in the first place)
 - You can adapt `new_entry.sh` to change the new entry "template".
 
@@ -35,7 +35,10 @@ On first use (meaning if you don't have an encrypted folder yet), you don't need
 ## FAQ
 
 Q: Why didn't you use XYZ?
-A: I like knowing exactly what happens in scripts I run on my computer
+
+A: I like knowing exactly what happens in scripts I run on my computer and I like knowing exactly how my data is stored.
+
 
 Q: Why do you need to type the password twice every time you lock the diary?
+
 A: Because the password is not stored anywhere and you wouldn't want to lock yourself out forever if you accidentally mistype once.
